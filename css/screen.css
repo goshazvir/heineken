@@ -1,0 +1,257 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+/*-------------------------  ------------------------- */
+/*------------------------- fonts ------------------------- */
+@font-face { font-family: HEINEKEN Core; src: url("fonts/HEINEKEN Core.eot"); src: url("fonts/HEINEKEN Core.eot?#iefix") format("embedded-opentype"), url("fonts/HEINEKEN Core.woff") format("woff"), url("fonts/HEINEKEN Core.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HEINEKEN Core-Bold; src: url("fonts/HEINEKEN Core-Bold.eot"); src: url("fonts/HEINEKEN Core-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/HEINEKEN Core-Bold.woff") format("woff"), url("fonts/HEINEKEN Core-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HEINEKEN Core-ExtraBold; src: url("fonts/HEINEKEN Core-ExtraBold.eot"); src: url("fonts/HEINEKEN Core-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/HEINEKEN Core-ExtraBold.woff") format("woff"), url("fonts/HEINEKEN Core-ExtraBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HEINEKEN Core-Thin; src: url("fonts/HEINEKEN Core-Thin.eot"); src: url("fonts/HEINEKEN Core-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/HEINEKEN Core-Thin.woff") format("woff"), url("fonts/HEINEKEN Core-Thin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HEINEKEN Core-Italic; src: url("fonts/HEINEKEN Core-Italic.eot"); src: url("fonts/HEINEKEN Core-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/HEINEKEN Core-Italic.woff") format("woff"), url("fonts/HEINEKEN Core-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+/*------------------------- general ------------------------- */
+body { font-size: 12px; line-height: 1.4; font-family: "HEINEKEN Core", arial, sans-serif; }
+
+.out { position: relative; }
+
+.wrap { width: 790px; position: absolute; top: 0; left: 50%; margin-left: -395px; }
+
+.wrap_mod { width: 1100px; margin-left: -550px; }
+
+.section { text-align: center; }
+
+.logo { background: url('../img/icons-s0ac5eb00cf.png') 0 0 no-repeat; width: 222px; height: 153px; position: absolute; top: 15px; left: 50%; margin-left: -111px; }
+
+.final1 { display: inline-block; background: url('../img/icons-s0ac5eb00cf.png') 0 -371px no-repeat; width: 149px; height: 77px; position: absolute; top: 75px; left: 0; }
+
+.final2 { display: inline-block; background: url('../img/icons-s0ac5eb00cf.png') 0 -163px no-repeat; width: 101px; height: 96px; position: absolute; top: 75px; right: 0; }
+
+.final3 { display: inline-block; background: url('../img/icons-s0ac5eb00cf.png') 0 -269px no-repeat; width: 97px; height: 92px; position: absolute; bottom: 35px; left: 185px; }
+
+.final4 { display: inline-block; background: url('../img/icons-s0ac5eb00cf.png') 0 -580px no-repeat; width: 107px; height: 55px; position: absolute; bottom: 35px; right: 50px; }
+
+.i-scroll { background: url('../img/icons-s0ac5eb00cf.png') 0 -1856px no-repeat; width: 41px; height: 55px; position: absolute; bottom: 50px; left: 50%; margin-left: -20px; }
+
+.sidebar { width: 140px; padding: 20px 0 20px; position: fixed; top: 0; bottom: 0; left: 0; z-index: 70; background: white; }
+
+.nav li { position: relative; }
+.nav li.active:before { content: ""; background: url('../img/icons-s0ac5eb00cf.png') 0 -982px no-repeat; width: 170px; height: 131px; height: 121px; position: absolute; top: 0; left: 0; z-index: -1; }
+.nav li.active a { color: #5e060d; }
+.nav a { display: block; text-transform: uppercase; text-align: center; text-decoration: none; color: #333333; font-family: "HEINEKEN Core-Bold", arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.nav a:before { content: ""; position: absolute; }
+
+.nav__1 a { padding-top: 66px; padding-bottom: 40px; }
+.nav__1 a:before { left: 41px; top: 10px; background: url('../img/icons-s0ac5eb00cf.png') 0 -1633px no-repeat; width: 48px; height: 48px; }
+
+.nav__2 a { padding-top: 66px; padding-bottom: 35px; }
+.nav__2 a:before { left: 52px; top: 10px; background: url('../img/icons-s0ac5eb00cf.png') 0 -1798px no-repeat; width: 39px; height: 48px; }
+
+.nav__3 a { padding-top: 66px; padding-bottom: 25px; }
+.nav__3 a:before { left: 52px; top: 10px; background: url('../img/icons-s0ac5eb00cf.png') 0 -924px no-repeat; width: 35px; height: 48px; }
+
+.nav__4 a { padding-top: 66px; padding-bottom: 25px; }
+.nav__4 a:before { left: 45px; top: 10px; background: url('../img/icons-s0ac5eb00cf.png') 0 -863px no-repeat; width: 45px; height: 51px; }
+
+.nav__5 a { padding-top: 66px; padding-bottom: 25px; }
+.nav__5 a:before { left: 48px; top: 10px; background: url('../img/icons-s0ac5eb00cf.png') 0 -1123px no-repeat; width: 49px; height: 48px; }
+
+.copy { color: darkgrey; position: absolute; bottom: 15px; width: 140px; left: 50%; margin-left: -70px; text-align: center; }
+
+/*------------------------- page  ------------------------- */
+.section1 { background: url(../img/bg2.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.section1__top { position: absolute; top: 45px; left: 45px; right: 45px; *zoom: 1; }
+.section1__top:after { content: " "; display: table; clear: both; }
+
+.section1__top-social { float: left; }
+.section1__top-social .section1__top-social-note { margin-top: 2px; margin-right: 15px; display: inline-block; vertical-align: middle; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); }
+.section1__top-social .social { display: inline-block; vertical-align: middle; }
+
+.section1__descr { float: right; }
+.section1__descr a { margin-left: 45px; text-decoration: none; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); }
+.section1__descr a:first-child { margin-left: 0; }
+.section1__descr a:hover { text-decoration: underline; }
+
+.section2 { background: url(../img/bg4.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section2 .logo { margin-left: 0; }
+
+.section3 { background: url(../img/bg1.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.section4 { background: url(../img/bg5.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section4 .logo { top: 225px; }
+.section4 .tableCell { display: inline-block; }
+
+.section5 { background: url(../img/bg1.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.form { min-height: 330px; padding: 0px 40px 0 40px; margin-top: 245px; background: rgba(17, 35, 13, 0.6); }
+
+.form__title { margin-bottom: 20px; font-size: 32px; text-transform: uppercase; position: relative; color: white; font-family: "HEINEKEN Core-Bold", arial, sans-serif; }
+.form__title:before, .form__title:after { content: ""; width: 210px; height: 1px; background: #96a998; position: absolute; top: 21px; }
+.form__title:before { left: 0px; }
+.form__title:after { right: 0px; }
+.form__title span { padding: 0 12px; position: relative; z-index: 100; }
+
+.form__row { margin-bottom: 10px; text-align: left; *zoom: 1; }
+.form__row:after { content: " "; display: table; clear: both; }
+.form__row .input { margin-left: 7px; }
+.form__row .input:first-child { margin-left: 0; }
+
+.form__row-checkbox { margin-top: 15px; }
+
+.form__row_mod { text-align: center; }
+.form__row_mod input { color: #333333; }
+.form__row_mod input:-moz-placeholder, .form__row_mod input::-moz-placeholder { color: #333333; opacity: 1; }
+.form__row_mod input::-webkit-input-placeholder { color: #333333; }
+
+.form__label { display: inline-block; }
+
+.form__label-1, .form__label-2 { *zoom: 1; }
+.form__label-1:after, .form__label-2:after { content: " "; display: table; clear: both; }
+.form__label-1 .input, .form__label-2 .input { float: left; }
+.form__label-1 .file, .form__label-2 .file { float: right; }
+
+.form__label-1 { margin-right: 8px; float: left; }
+.form__label-1 .input { margin-right: 7px; }
+
+.form__label-2 { float: right; }
+.form__label-2 .input { margin-right: 7px; }
+
+.input, .select { width: 220px; height: 32px; padding: 0 5px; font-size: 16px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; color: #999999; }
+.input:-moz-placeholder, .input::-moz-placeholder, .select:-moz-placeholder, .select::-moz-placeholder { color: #999999; opacity: 1; }
+.input::-webkit-input-placeholder, .select::-webkit-input-placeholder { color: #999999; }
+
+.select { width: 230px; height: 32px; padding: 3px 0; color: #333333; }
+
+label.checkbox { margin-bottom: 9px; display: block; }
+
+.checkbox { height: 17px; position: relative; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 14px; }
+.checkbox span { color: white; display: inline-block; margin-left: 10px; }
+.checkbox input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.checkbox input + span .checkbox__ico { content: ""; position: absolute; top: 0px; left: 0px; width: 17px; height: 17px; background: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.checkbox input:checked + span .checkbox__ico:after { content: ""; position: absolute; top: 4px; left: 2px; background: url('../img/icons-s0ac5eb00cf.png') 0 -2117px no-repeat; width: 13px; height: 10px; z-index: 666; }
+
+.btn { height: 32px; line-height: 32px; padding: 0 12px; display: inline-block; font-size: 14px; text-transform: uppercase; color: white; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.29); -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; font-family: "HEINEKEN Core-Bold", arial, sans-serif; }
+
+.btn_green { background: #769a46; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bde372), color-stop(100%, #3d5f23)); background-image: -webkit-linear-gradient(#bde372, #3d5f23); background-image: -moz-linear-gradient(#bde372, #3d5f23); background-image: -o-linear-gradient(#bde372, #3d5f23); background-image: linear-gradient(#bde372, #3d5f23); -webkit-box-shadow: 0px 1px 0 #2b4628, 0px -1px 0 #e5f5c7; -moz-box-shadow: 0px 1px 0 #2b4628, 0px -1px 0 #e5f5c7; box-shadow: 0px 1px 0 #2b4628, 0px -1px 0 #e5f5c7; }
+.btn_green:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3d5f23), color-stop(100%, #bde372)); background-image: -webkit-linear-gradient(#3d5f23, #bde372); background-image: -moz-linear-gradient(#3d5f23, #bde372); background-image: -o-linear-gradient(#3d5f23, #bde372); background-image: linear-gradient(#3d5f23, #bde372); }
+.btn_green:active { position: relative; top: 1px; }
+
+.file { position: relative; }
+.file input { width: 100%; height: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: absolute; top: 0; bottom: 0; left: 0; right: 0; font-size: 0; }
+
+.submit { width: 280px; height: 58px; line-height: 58px; padding: 0 45px; display: inline-block; font-size: 24px; color: white; text-transform: uppercase; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0px 1px 0 #589058, 0px -1px 0 #f4a1aa; -moz-box-shadow: 0px 1px 0 #589058, 0px -1px 0 #f4a1aa; box-shadow: 0px 1px 0 #589058, 0px -1px 0 #f4a1aa; background: #c60a14; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3152a), color-stop(100%, #ab0000)); background-image: -webkit-linear-gradient(#e3152a, #ab0000); background-image: -moz-linear-gradient(#e3152a, #ab0000); background-image: -o-linear-gradient(#e3152a, #ab0000); background-image: linear-gradient(#e3152a, #ab0000); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "HEINEKEN Core-Bold", arial, sans-serif; position: absolute; left: 50%; margin-left: -140px; bottom: -20px; }
+.submit:hover { background: #c60a14; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ab0000), color-stop(100%, #e3152a)); background-image: -webkit-linear-gradient(#ab0000, #e3152a); background-image: -moz-linear-gradient(#ab0000, #e3152a); background-image: -o-linear-gradient(#ab0000, #e3152a); background-image: linear-gradient(#ab0000, #e3152a); }
+.submit:active { bottom: -21px; }
+
+.social { *zoom: 1; }
+.social:after { content: " "; display: table; clear: both; }
+.social li { margin: 0 5px; float: left; }
+.social a { display: block; }
+.social .social__vk a { background: url('../img/icons-s0ac5eb00cf.png') 0 -1921px no-repeat; width: 20px; height: 19px; }
+.social .social__fb a { background: url('../img/icons-s0ac5eb00cf.png') 0 -2073px no-repeat; width: 20px; height: 19px; }
+.social .social__tw a { background: url('../img/icons-s0ac5eb00cf.png') 0 -1974px no-repeat; width: 20px; height: 19px; }
+
+.instructions { margin-top: 245px; }
+.instructions ul { text-align: center; *zoom: 1; }
+.instructions ul:after { content: " "; display: table; clear: both; }
+.instructions li { position: relative; display: inline-block; vertical-align: top; }
+.instructions li:before { content: ""; position: absolute; top: 0; left: 50%; }
+.instructions .instructions__step1 { width: 290px; padding-top: 135px; margin-right: 50px; }
+.instructions .instructions__step1:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -757px no-repeat; width: 68px; height: 96px; margin-left: -34px; }
+.instructions .instructions__step1:after { content: ""; width: 184px; border-bottom: 1px dashed rgba(255, 255, 255, 0.5); position: absolute; right: -80px; top: 57px; }
+.instructions .instructions__step1 .instructions__title:before, .instructions .instructions__step1 .instructions__title:after { content: ""; position: absolute; }
+.instructions .instructions__step1 .instructions__title:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -1950px no-repeat; width: 281px; height: 14px; top: -15px; left: 5px; }
+.instructions .instructions__step1 .instructions__title:after { width: 171px; height: 1px; background: rgba(47, 122, 72, 0.5); bottom: -5px; left: 50%; margin-left: -86px; }
+.instructions .instructions__step2 { width: 170px; padding-top: 135px; margin-right: 90px; }
+.instructions .instructions__step2:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -1691px no-repeat; width: 78px; height: 97px; margin-left: -39px; }
+.instructions .instructions__step2:after { content: ""; width: 140px; border-bottom: 1px dashed rgba(255, 255, 255, 0.5); position: absolute; right: -106px; top: 57px; }
+.instructions .instructions__step2 .instructions__title:before, .instructions .instructions__step2 .instructions__title:after { content: ""; position: absolute; }
+.instructions .instructions__step2 .instructions__title:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -2003px no-repeat; width: 165px; height: 14px; top: -15px; left: 2px; }
+.instructions .instructions__step2 .instructions__title:after { width: 96px; height: 1px; background: rgba(47, 122, 72, 0.5); bottom: -5px; left: 50%; margin-left: -48px; }
+.instructions .instructions__step3 { width: 185px; padding-top: 135px; margin-right: 105px; }
+.instructions .instructions__step3:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -458px no-repeat; width: 112px; height: 112px; margin-left: -66px; }
+.instructions .instructions__step3:after { content: ""; width: 160px; border-bottom: 1px dashed rgba(255, 255, 255, 0.5); position: absolute; right: -130px; top: 57px; }
+.instructions .instructions__step3 .instructions__title:before, .instructions .instructions__step3 .instructions__title:after { content: ""; position: absolute; }
+.instructions .instructions__step3 .instructions__title:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -2050px no-repeat; width: 167px; height: 13px; top: -15px; left: 2px; }
+.instructions .instructions__step3 .instructions__title:after { width: 180px; height: 1px; background: rgba(47, 122, 72, 0.5); bottom: -5px; left: 50%; margin-left: -90px; }
+.instructions .instructions__step4 { width: 185px; padding-top: 135px; }
+.instructions .instructions__step4:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -645px no-repeat; width: 91px; height: 102px; margin-left: -45px; }
+.instructions .instructions__step4 .instructions__title:before, .instructions .instructions__step4 .instructions__title:after { content: ""; position: absolute; }
+.instructions .instructions__step4 .instructions__title:before { background: url('../img/icons-s0ac5eb00cf.png') 0 -2027px no-repeat; width: 166px; height: 13px; top: -15px; left: 2px; }
+.instructions .instructions__step4 .instructions__title:after { width: 170px; height: 1px; background: rgba(47, 122, 72, 0.5); bottom: -5px; left: 50%; margin-left: -85px; }
+
+.instructions__title { margin-bottom: 20px; text-transform: uppercase; color: white; position: relative; color: white; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+.instructions__title .h2 { font-size: 21px; font-family: "HEINEKEN Core-ExtraBold", arial, sans-serif; }
+.instructions__title .h3 { font-size: 21px; font-family: "HEINEKEN Core-Thin", arial, sans-serif; }
+
+.instructions__descr { font-family: "HEINEKEN Core-Italic", arial, sans-serif; }
+.instructions__descr a { font-size: 18px; border-bottom: 1px dashed white; color: white; text-decoration: none; }
+.instructions__descr a:hover { border-bottom-color: transparent; }
+.instructions__descr span { font-size: 18px; color: #50b46c; }
+
+.sity { margin-left: 140px; background: rgba(17, 35, 13, 0.8); position: absolute; top: 200px; bottom: 0; left: 0; right: 0; text-align: left; color: white; }
+
+.sity__in { width: 1120px; margin-left: auto; margin-right: auto; margin-top: 20px; }
+
+.sity__row { margin-bottom: 20px; }
+.sity__row select { margin-right: 10px; text-transform: uppercase; font-family: "HEINEKEN Core-Bold", arial, sans-serif; }
+
+.sity__meta { margin-right: 40px; text-transform: uppercase; letter-spacing: 4px; font-family: "HEINEKEN Core-Bold", arial, sans-serif; }
+
+.sity__list { height: 250px; padding: 0 30px; }
+.sity__list li { width: 280px; display: inline-block; font-size: 14px; position: relative; }
+.sity__list .sity__item { margin-bottom: 30px; position: relative; }
+.sity__list .sity__item:before { content: ""; width: 15px; height: 1px; background: #59d90c; position: absolute; left: -30px; top: 10px; }
+
+.regulations { margin-top: 180px; }
+.regulations .h2 { width: 800px; padding-bottom: 20px; margin-left: 100px; border-bottom: 1px solid rgba(255, 255, 255, 0.39); font-size: 48px; line-height: 1; text-transform: uppercase; color: white; font-family: "HEINEKEN Core-Bold", arial, sans-serif; }
+
+.regulations__slide { width: 800px; margin-left: 100px; margin-top: 25px; position: relative; }
+.regulations__slide .slide .tableCell { display: block; }
+.regulations__slide .intro { color: white; text-align: left; }
+.regulations__slide .intro .h2 { margin-bottom: 10px; font-size: 24px; font-family: "HEINEKEN Core-Bold", arial, sans-serif; }
+.regulations__slide ul { width: 315px; }
+.regulations__slide li { margin-bottom: 20px; font-size: 14px; color: #999999; }
+
+.regulations__in { *zoom: 1; }
+.regulations__in:after { content: " "; display: table; clear: both; }
+
+.regulations__col { width: 370px; float: left; }
+.regulations__col:first-child { margin-right: 50px; }
+
+.num { margin-right: 15px; color: #999999; }
+
+.controlArrow { top: 50px; }
+.controlArrow.next, .controlArrow.prev { border-width: 0; border-color: transparent transparent transparent transparent; }
+.controlArrow.next { background: url('../img/icons-s0ac5eb00cf.png') 0 -1181px no-repeat; width: 32px; height: 216px; right: -82px; }
+.controlArrow.prev { background: url('../img/icons-s0ac5eb00cf.png') 0 -1407px no-repeat; width: 32px; height: 216px; left: -82px; }
+
+.date { width: 850px; margin-top: 400px; margin-left: auto; margin-right: auto; color: white; }
+
+.date__title { font-size: 48px; text-transform: uppercase; font-family: "HEINEKEN Core-Bold", arial, sans-serif; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75); }
+
+.l { *zoom: 1; }
+.l:after { content: " "; display: table; clear: both; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }

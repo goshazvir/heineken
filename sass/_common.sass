@@ -1,0 +1,661 @@
+/*-------------------------  -------------------------*/
+
+$bl: #333 
+/*------------------------- fonts -------------------------*/
++font(HEINEKEN Core, HEINEKEN Core)
+=h
+	font-family: "HEINEKEN Core", arial, sans-serif
+
++font(HEINEKEN Core-Bold, HEINEKEN Core-Bold)
+=hb
+	font-family: "HEINEKEN Core-Bold", arial, sans-serif
+	
++font(HEINEKEN Core-ExtraBold, HEINEKEN Core-ExtraBold)
+=heb
+	font-family: "HEINEKEN Core-ExtraBold", arial, sans-serif
+	
++font(HEINEKEN Core-Thin, HEINEKEN Core-Thin)
+=ht
+	font-family: "HEINEKEN Core-Thin", arial, sans-serif
+
++font(HEINEKEN Core-Italic, HEINEKEN Core-Italic)
+=hi
+	font-family: "HEINEKEN Core-Italic", arial, sans-serif
+/*------------------------- general -------------------------*/
+body
+	font-size: 12px  
+	line-height: 1.4
+	+h
+.out
+	position: relative
+.wrap
+	width: 790px
+	position: absolute
+	top: 0
+	left: 50%
+	margin-left: -395px
+.wrap_mod
+	width: 1100px
+	margin-left: -550px
+.section
+	text-align: center
+.logo
+	+s(logo)
+	position: absolute
+	top: 15px
+	left: 50%
+	margin-left: -111px
+.final1
+	display: inline-block
+	+s(ico21)
+	position: absolute
+	top: 75px
+	left: 0
+.final2
+	display: inline-block
+	+s(ico22)
+	position: absolute
+	top: 75px
+	right: 0
+.final3
+	display: inline-block
+	+s(ico23)
+	position: absolute
+	bottom: 35px
+	left: 185px
+.final4
+	display: inline-block
+	+s(ico24)
+	position: absolute
+	bottom: 35px
+	right: 50px
+.i-scroll
+	+s(i-scroll)
+	position: absolute
+	bottom: 50px
+	left: 50%
+	margin-left: -20px
+.sidebar
+	width: 140px
+	padding: 20px 0 20px
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	z-index: 70
+	background: #FFF 
+.nav
+	li
+		position: relative
+		&.active
+			&:before
+				content: ""
+				+s(label)
+				height: 121px
+				position: absolute
+				top: 0
+				left: 0
+				z-index: -1
+			a
+				color: #5E060D 
+	a
+		// height: 127px
+		display: block
+		text-transform: uppercase
+		text-align: center
+		text-decoration: none
+		color: $bl
+		+hb
+		+box
+		&:before
+			content: ""
+			position: absolute
+
+.nav__1
+	a
+		padding-top: 66px
+		padding-bottom: 40px
+		&:before
+			left: 41px
+			top: 10px
+			+s(ico1)
+.nav__2
+	a
+		padding-top: 66px
+		padding-bottom: 35px
+		&:before
+			left: 52px
+			top: 10px
+			+s(ico2)
+.nav__3
+	a
+		padding-top: 66px
+		padding-bottom: 25px
+		&:before
+			left: 52px
+			top: 10px
+			+s(ico3)
+.nav__4
+	a
+		padding-top: 66px
+		padding-bottom: 25px
+		&:before
+			left: 45px
+			top: 10px
+			+s(ico4)
+.nav__5
+	a
+		padding-top: 66px
+		padding-bottom: 25px
+		&:before
+			left: 48px
+			top: 10px
+			+s(ico5)
+.copy
+	// margin-bottom: 15px
+	color: #a9a9a9
+	position: absolute
+	bottom: 15px
+	width: 140px
+	left: 50%
+	margin-left: -70px
+	text-align: center
+/*------------------------- page  -------------------------*/
+.section1
+	background: url(../img/bg2.jpg)
+	+cover
+.section1__top
+	position: absolute
+	top: 45px
+	left: 45px
+	right: 45px
+	+clr
+.section1__top-social
+	float: left
+	.section1__top-social-note
+		margin-top: 2px
+		margin-right: 15px
+		display: inline-block
+		vertical-align: middle
+		text-transform: uppercase
+		color: rgba(#fff, .5)
+	.social
+		display: inline-block
+		vertical-align: middle
+
+.section1__descr
+	float: right
+	a
+		margin-left: 45px
+		text-decoration: none
+		text-transform: uppercase
+		color: rgba(#fff, .5)
+		&:first-child
+			margin-left: 0
+		&:hover
+			text-decoration: underline
+.section2
+	background: url(../img/bg4.jpg)
+	+cover
+	.logo
+		margin-left: 0
+.section3
+	background: url(../img/bg1.jpg)
+	+cover
+.section4
+	background: url(../img/bg5.jpg)
+	+cover
+	.logo
+		top: 225px
+	.tableCell
+		display: inline-block
+.section5
+	background: url(../img/bg1.jpg)
+	+cover
+.form
+	min-height: 330px
+	padding: 0px 40px 0 40px
+	margin-top: 245px
+	background: rgba(#11230d, .6)
+.form__title
+	margin-bottom: 20px
+	font-size: 32px
+	text-transform: uppercase
+	position: relative
+	color: #fff 
+	+hb
+	&:before, &:after
+		content: ""
+		width: 210px
+		height: 1px
+		background: #96A998 
+		position: absolute
+		top: 21px
+	&:before
+		left: 0px
+	&:after
+		right: 0px
+	span
+		padding: 0 12px 
+		position: relative
+		z-index: 100
+		// background: rgba(#11230d, .6)
+.form__row
+	margin-bottom: 10px
+	text-align: left
+	+clr
+	.input
+		margin-left: 7px
+		&:first-child
+			margin-left: 0
+.form__row-checkbox
+	margin-top: 15px
+.form__row_mod
+	text-align: center
+	input
+		color: $bl
+		+placeholder-color($bl)
+.form__label
+	display: inline-block
+.form__label-1, .form__label-2
+	+clr
+	.input
+		float: left
+	.file
+		float: right
+.form__label-1
+	margin-right: 8px
+	float: left
+	.input
+		margin-right: 7px
+.form__label-2
+	float: right
+	.input
+		margin-right: 7px
+.input, .select
+	width: 220px
+	height: 32px
+	padding: 0 5px
+	font-size: 16px
+	+border-radius(3px)
+	color: #999
+	+placeholder-color(#999)
+.select
+	width: 230px
+	height: 32px
+	padding: 3px 0
+	color: $bl
+label.checkbox
+	margin-bottom: 9px
+	display: block
+.checkbox
+	height: 17px
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 14px
+	span
+		color: #fff
+		display: inline-block
+		margin-left: 10px //
+	input
+		+opacity(0)
+	input + span
+		.checkbox__ico
+			content: ""
+			position: absolute
+			top: 0px
+			left: 0px
+			width: 17px
+			height: 17px
+			background: #fff
+			+box
+			+border-radius(3px)
+	input:checked + span
+		.checkbox__ico
+			&:after
+				content: ""
+				position: absolute
+				top: 4px
+				left: 2px
+				+s(i-che)
+				z-index: 666
+.btn
+	height: 32px
+	line-height: 32px
+	padding: 0 12px
+	display: inline-block
+	font-size: 14px
+	text-transform: uppercase
+	color: #fff
+	@include text-shadow(0 1px 0 rgba(0,0,0,.29))
+	+border-radius(3px)
+	+hb
+.btn_green
+	background: #769A46 
+	+g(#bde372, #3d5f23)
+	+box-shadow(0px 1px 0 #2b4628, 0px -1px 0 #e5f5c7)
+	&:hover
+		+g(#3d5f23, #bde372)
+	&:active
+		position: relative
+		top: 1px
+.file
+	position: relative
+	input
+		width: 100%
+		height: 100%
+		+opacity(0)
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		font-size: 0
+.submit
+	width: 280px
+	height: 58px
+	line-height: 58px
+	padding: 0 45px
+	display: inline-block
+	font-size: 24px
+	color: #fff 
+	text-transform: uppercase
+	+border-radius(3px)
+	+box-shadow(0px 1px 0 #589058, 0px -1px 0 #f4a1aa)
+	background: #c60a14 
+	+g(#e3152a, #ab0000)
+	+box
+	+hb
+	position: absolute
+	left: 50%
+	margin-left: -140px
+	bottom: -20px
+	// extra bold
+	&:hover
+		background: #c60a14 
+		+g(#ab0000, #e3152a)
+	&:active
+		bottom: -21px
+.social
+	+clr
+	li
+		margin: 0 5px
+		float: left
+	a
+		display: block
+	.social__vk
+		a
+			+s(vk)
+	.social__fb
+		a
+			+s(fb)
+	.social__tw
+		a
+			+s(tw)
+
+.instructions
+	margin-top: 245px
+	ul
+		text-align: center
+		+clr
+	li
+		position: relative
+		display: inline-block
+		vertical-align: top
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 50%
+	.instructions__step1
+		width: 290px
+		padding-top: 135px
+		margin-right: 50px
+		&:before
+			+s(ico31)
+			margin-left: -34px
+		&:after
+			content: ""
+			width: 184px
+			border-bottom: 1px dashed rgba(#fff, .5)
+			position: absolute
+			right: -80px
+			top: 57px 
+		.instructions__title
+			&:before, &:after
+				content: ""
+				position: absolute
+			&:before
+				+s(t1)
+				top: -15px
+				left: 5px
+			&:after
+				width: 171px
+				height: 1px
+				background: rgba(#2F7A48, .5)
+				bottom: -5px
+				left: 50%
+				margin-left: -86px
+	.instructions__step2
+		width: 170px
+		padding-top: 135px
+		margin-right: 90px
+		&:before
+			+s(ico32)
+			margin-left: -39px
+		&:after
+			content: ""
+			width: 140px
+			border-bottom: 1px dashed rgba(#fff, .5)
+			position: absolute
+			right: -106px
+			top: 57px 
+		.instructions__title
+			&:before, &:after
+				content: ""
+				position: absolute
+			&:before
+				+s(t2)
+				top: -15px
+				left: 2px
+			&:after
+				width: 96px
+				height: 1px
+				background: rgba(#2F7A48, .5)
+				bottom: -5px
+				left: 50%
+				margin-left: -48px
+	.instructions__step3
+		width: 185px
+		padding-top: 135px
+		margin-right: 105px
+		&:before
+			+s(ico33)
+			margin-left: -66px
+		&:after
+			content: ""
+			width: 160px
+			border-bottom: 1px dashed rgba(#fff, .5)
+			position: absolute
+			right: -130px
+			top: 57px 
+		.instructions__title
+			&:before, &:after
+				content: ""
+				position: absolute
+			&:before
+				+s(t3)
+				top: -15px
+				left: 2px
+			&:after
+				width: 180px
+				height: 1px
+				background: rgba(#2F7A48, .5)
+				bottom: -5px
+				left: 50%
+				margin-left: -90px
+	.instructions__step4
+		width: 185px
+		padding-top: 135px
+		&:before
+			+s(ico34)
+			margin-left: -45px
+		.instructions__title
+			&:before, &:after
+				content: ""
+				position: absolute
+			&:before
+				+s(t4)
+				top: -15px
+				left: 2px
+			&:after
+				width: 170px
+				height: 1px
+				background: rgba(#2F7A48, .5)
+				bottom: -5px
+				left: 50%
+				margin-left: -85px
+
+.instructions__title
+	margin-bottom: 20px
+	text-transform: uppercase
+	color: #fff
+	position: relative
+	color: #fff
+	@include text-shadow(0 1px 0 rgba(0,0,0,.5))
+	.h2
+		font-size: 21px
+		+heb
+	.h3
+		font-size: 21px
+		+ht
+.instructions__descr
+	+hi
+	a
+		font-size: 18px
+		border-bottom: 1px dashed #fff
+		color: #FFF
+		text-decoration: none
+		&:hover
+			border-bottom-color: transparent
+	span
+		font-size: 18px
+		color: #50B46C
+
+.sity
+	margin-left: 140px
+	background: rgba(#11230d, .8)
+	position: absolute
+	top: 200px
+	bottom: 0
+	left: 0
+	right: 0
+	text-align: left
+	color: #fff 
+.sity__in
+	width: 1120px
+	margin-left: auto
+	margin-right: auto
+	margin-top: 20px
+.sity__row
+	margin-bottom: 20px
+	select
+		margin-right: 10px
+		text-transform: uppercase
+		+hb
+.sity__meta
+	margin-right: 40px
+	text-transform: uppercase
+	letter-spacing: 4px
+	+hb
+.sity__list
+	// width: 10000px
+	height: 250px
+	padding: 0 30px 
+	li
+		width: 280px
+		display: inline-block
+		font-size: 14px
+		position: relative
+	.sity__item
+		margin-bottom: 30px
+		position: relative
+		&:before
+			content: ""
+			width: 15px
+			height: 1px
+			background: #59D90C
+			position: absolute
+			left: -30px
+			top: 10px
+
+.regulations
+	margin-top: 180px
+	.h2
+		width: 800px
+		padding-bottom: 20px
+		margin-left: 100px
+		border-bottom: 1px solid rgba(#fff, .39)
+		font-size: 48px
+		line-height: 1
+		text-transform: uppercase
+		color: #FFF
+		+hb
+.regulations__slide
+	width: 800px
+	margin-left: 100px
+	margin-top: 25px
+	position: relative
+	.slide
+		.tableCell
+			display: block
+	.intro
+		color: #FFF
+		text-align: left
+		.h2
+			margin-bottom: 10px
+			font-size: 24px
+			+hb
+	ul
+		width: 315px
+	li
+		margin-bottom: 20px
+		font-size: 14px
+		color: #999
+.regulations__in
+	+clr
+.regulations__col
+	width: 370px
+	float: left
+	&:first-child
+		margin-right: 50px
+.num
+	margin-right: 15px
+	color: #999 
+.controlArrow
+	top: 50px
+	&.next, &.prev
+		border-width: 0
+		border-color: transparent transparent transparent transparent
+	&.next
+		+s(i-next)
+		right: -82px
+	&.prev
+		+s(i-prev)
+		left: -82px
+
+.date
+	width: 850px
+	margin-top: 400px
+	margin-left: auto 
+	margin-right: auto
+	color: #FFF
+.date__title
+	font-size: 48px
+	text-transform: uppercase
+	+hb
+	@include text-shadow(0 1px 0 rgba(0,0,0,.75))
+
+
